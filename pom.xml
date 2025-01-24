@@ -11,8 +11,8 @@
     <modules>
         <module>m1-objects-classes-complete</module>
         <module>m1-objects-classes</module>
-        <module>m2-state-and-behaviour</module>
-        <module>m2-state-and-behaviour-complete</module>
+        <module>m2-state-and-behavior</module>
+        <module>m2-state-and-behavior-complete</module>
     </modules>
 
     <properties>

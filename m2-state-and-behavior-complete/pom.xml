@@ -9,7 +9,7 @@
         <version>1.0</version>
     </parent>
 
-    <artifactId>m2-state-and-behaviour-complete</artifactId>
+    <artifactId>m2-state-and-behavior-complete</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

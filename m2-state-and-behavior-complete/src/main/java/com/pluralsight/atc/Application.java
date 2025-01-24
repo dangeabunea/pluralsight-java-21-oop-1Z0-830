@@ -21,7 +21,7 @@ public class Application {
                 System.out.println(os791.getLabel());
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
-                throw new RuntimeException("Task was interrupted", e);
+                throw new RuntimeException("Task interrupted", e);
             }
         });
         waitForAltitudeAdjustment.join();
