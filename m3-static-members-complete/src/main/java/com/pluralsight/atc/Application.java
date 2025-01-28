@@ -10,14 +10,13 @@ public class Application {
                 new NeighborAircraft("AF567", 6000, 400)
         );
 
-        neighborAircraft.forEach((neighbour) -> {
-                    double horizDistanceInNm = UnitConversion.fromMetersToNm(neighbour.getHorizontalDistInMeters());
-                    double vertDistInFeet = UnitConversion.fromMetersToFeet(neighbour.getVerticalDistInMeters());
+        neighborAircraft.forEach((neighbor) -> {
+            double horizDistanceInNm = UnitConversion.fromMetersToNm(neighbor.getHorizontalDistInMeters());
+            double vertDistInFeet = UnitConversion.fromMetersToFeet(neighbor.getVerticalDistInMeters());
 
-                    if (horizDistanceInNm < 5.0 && vertDistInFeet < 2000) {
-                        System.out.println("Alert - Aircraft " + neighbour.getCallSign() + " too close");
-                    }
-                }
-        );
+            if (horizDistanceInNm < 5.0 && vertDistInFeet < 2000) {
+                System.out.println("Alert - Aircraft " + neighbor.getCallSign() + " too close");
+            }
+        });
     }
 }
