@@ -2,16 +2,16 @@ package com.pluralsight.atc;
 
 public class UnitConversion {
     private static int nauticalMileToMeters;
-    private static double meterToFoot;
+    private static double meterToFeet;
 
     static {
         // static initializer
         nauticalMileToMeters = 1852;
-        meterToFoot = 3.28;
+        meterToFeet = 3.28;
     }
 
     public static double fromMetersToFeet(int meters) {
-        return meters * meterToFoot;
+        return meters * meterToFeet;
     }
 
     public static double fromMetersToNm(int meters) {
