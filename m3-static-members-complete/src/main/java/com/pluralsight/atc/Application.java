@@ -4,13 +4,13 @@ import java.util.List;
 
 public class Application {
     public static void main(String[] args) {
-        final List<NeighbourAircraft> neighbourAircraft = List.of(
-                new NeighbourAircraft("OS793", 4000, 300),
-                new NeighbourAircraft("RO123", 10000, 200),
-                new NeighbourAircraft("AF567", 6000, 400)
+        final List<NeighborAircraft> neighborAircraft = List.of(
+                new NeighborAircraft("OS793", 4000, 300),
+                new NeighborAircraft("RO123", 10000, 200),
+                new NeighborAircraft("AF567", 6000, 400)
         );
 
-        neighbourAircraft.forEach((neighbour) -> {
+        neighborAircraft.forEach((neighbour) -> {
                     double horizDistanceInNm = UnitConversion.fromMetersToNm(neighbour.getHorizontalDistInMeters());
                     double vertDistInFeet = UnitConversion.fromMetersToFeet(neighbour.getVerticalDistInMeters());
 

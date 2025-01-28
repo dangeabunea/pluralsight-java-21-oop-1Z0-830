@@ -4,14 +4,14 @@ import java.util.List;
 
 public class Application {
     public static void main(String[] args) {
-        final List<NeighbourAircraft> neighbourAircraft = List.of(
-                new NeighbourAircraft("OS793", 4000, 300),
-                new NeighbourAircraft("RO123", 10000, 200),
-                new NeighbourAircraft("AF567", 6000, 400)
+        final List<NeighborAircraft> neighborAircraft = List.of(
+                new NeighborAircraft("OS793", 4000, 300),
+                new NeighborAircraft("RO123", 10000, 200),
+                new NeighborAircraft("AF567", 6000, 400)
         );
 
-        neighbourAircraft.forEach((neighbour) -> {
-                    double horizDistanceInNm = neighbour.getHorizontalDistInMeters() / 1852;
+        neighborAircraft.forEach((neighbour) -> {
+                    double horizDistanceInNm = (double) neighbour.getHorizontalDistInMeters() / 1852;
                     double vertDistInFeet = neighbour.getVerticalDistInMeters() * 3.28;
 
                     if (horizDistanceInNm < 5.0 && vertDistInFeet < 2000) {

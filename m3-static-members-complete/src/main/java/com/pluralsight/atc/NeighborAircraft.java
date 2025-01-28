@@ -1,13 +1,13 @@
 package com.pluralsight.atc;
 
-public class NeighbourAircraft {
+public class NeighborAircraft {
     private String callSign;
     private int horizontalDistInMeters;
     private int verticalDistInMeters;
 
-    public NeighbourAircraft(String callSign,
-                             int horizontalDistInMeters,
-                             int verticalDistInMeters) {
+    public NeighborAircraft(String callSign,
+                            int horizontalDistInMeters,
+                            int verticalDistInMeters) {
         this.callSign = callSign;
         this.horizontalDistInMeters = horizontalDistInMeters;
         this.verticalDistInMeters = verticalDistInMeters;
