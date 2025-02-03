@@ -3,21 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.pluralsight</groupId>
+        <artifactId>pluralsight-java-21-oop-izo830</artifactId>
+        <version>1.0</version>
+    </parent>
 
-    <groupId>com.pluralsight</groupId>
-    <artifactId>pluralsight-java-21-oop-izo830</artifactId>
-    <version>1.0</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>m1-objects-classes-complete</module>
-        <module>m1-objects-classes</module>
-        <module>m2-state-and-behavior</module>
-        <module>m2-state-and-behavior-complete</module>
-        <module>m3-static-members-complete</module>
-        <module>m3-static-members</module>
-        <module>m4-encapsulation-complete</module>
-        <module>m4-encapsulation</module>
-    </modules>
+    <artifactId>m4-encapsulation-complete</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -41,6 +33,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
