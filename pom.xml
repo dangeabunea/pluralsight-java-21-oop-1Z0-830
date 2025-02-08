@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.pluralsight</groupId>
-    <artifactId>pluralsight-java-21-oop-izo830</artifactId>
+    <artifactId>pluralsight-java-21-oop-1Z0-830</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
     <modules>
@@ -17,6 +17,7 @@
         <module>m3-static-members</module>
         <module>m4-encapsulation-complete</module>
         <module>m4-encapsulation</module>
+        <module>m5-inheritance-complete</module>
     </modules>
 
     <properties>
