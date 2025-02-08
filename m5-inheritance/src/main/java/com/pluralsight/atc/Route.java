@@ -1,4 +1,4 @@
 package com.pluralsight.atc;
 
-public class WayPoint {
+public class Route {
 }
