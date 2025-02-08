@@ -1,6 +1,6 @@
 package com.pluralsight.atc;
 
-public class Shape {
+public sealed abstract class Shape permits Route, Waypoint {
     public String toWkt() {
         String wkt = this.convertToWkt();
 
@@ -10,9 +10,7 @@ public class Shape {
         throw new RuntimeException("Can not draw shape");
     }
 
-    protected String convertToWkt(){
-        return "";
-    };
+    protected abstract String convertToWkt();
 
     private boolean isWktValid(String wkt) {
         if (wkt == null || wkt.isEmpty()) {

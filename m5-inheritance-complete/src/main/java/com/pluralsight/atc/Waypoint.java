@@ -1,6 +1,6 @@
 package com.pluralsight.atc;
 
-public class Waypoint extends Shape {
+public final class Waypoint extends Shape {
     private final String name;
     private final LatLon position;
 

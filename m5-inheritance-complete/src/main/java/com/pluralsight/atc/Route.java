@@ -2,7 +2,7 @@ package com.pluralsight.atc;
 
 import java.util.List;
 
-public class Route extends Shape {
+public final class Route extends Shape {
     private final String name;
     private final List<LatLon> coordinates;
 

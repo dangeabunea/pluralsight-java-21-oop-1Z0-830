@@ -15,9 +15,25 @@ public class Application {
                         new LatLon(41.7, 2.7))
         );
 
+        boolean printRoutes = true;
+        boolean printWaypoints = false;
+
         // Print wkt for drawing on screen
         airspace.forEach(s -> {
-            System.out.println(s.toWkt());
+            switch (s){
+                case Waypoint waypoint:{
+                    if(printWaypoints){
+                        System.out.println(waypoint.toString());
+                    }
+                    break;
+                }
+                case Route route:{
+                    if(printRoutes){
+                        System.out.println(route.toWkt());
+                    }
+                    break;
+                }
+            }
         });
     }
 }
