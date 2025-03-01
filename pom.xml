@@ -21,6 +21,8 @@
         <module>m5-inheritance</module>
         <module>m6-interfaces-complete</module>
         <module>m6-interfaces</module>
+        <module>m8-nested-classes</module>
+        <module>m8-nested-classes-complete</module>
     </modules>
 
     <properties>
