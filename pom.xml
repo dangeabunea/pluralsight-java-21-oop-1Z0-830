@@ -19,6 +19,8 @@
         <module>m4-encapsulation</module>
         <module>m5-inheritance-complete</module>
         <module>m5-inheritance</module>
+        <module>m6-interfaces-complete</module>
+        <module>m6-interfaces</module>
     </modules>
 
     <properties>
@@ -36,7 +38,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.pluralsight.atc.Application</mainClass>
+                            <mainClass>atc.com.pluralsight.atc.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

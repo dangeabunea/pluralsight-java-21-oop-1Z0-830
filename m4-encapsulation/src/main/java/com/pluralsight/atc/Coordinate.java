@@ -1,4 +1,0 @@
-package com.pluralsight.atc;
-
-public class Coordinate {
-}
