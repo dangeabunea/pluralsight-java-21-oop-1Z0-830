@@ -55,6 +55,22 @@ public class Aircraft {
         }
     }
 
+    static class Horizontal{
+        private double valueInNauticalMiles;
+
+        Horizontal(double valueInNauticalMiles) {
+            this.valueInNauticalMiles = valueInNauticalMiles;
+        }
+    }
+
+    static class Vertical{
+        private double valueInFeet;
+
+        Vertical(double valueInFeet) {
+            this.valueInFeet = valueInFeet;
+        }
+    }
+
     /**
      * Will be reused
      * Will declare it as a static nested class
