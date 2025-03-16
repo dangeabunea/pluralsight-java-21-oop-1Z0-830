@@ -12,12 +12,10 @@ public class Application {
                 new AircraftTakeOffModel("BA894", "A380", WakeTurbulence.SUPER)
         );
 
-        int offset = 0;
+        LocalDateTime depTime = LocalDateTime.now();
         for (AircraftTakeOffModel a : aircraftTakeOffs) {
-            offset += a.wakeTurbulence().getTimeOffset();
-            LocalDateTime depTime = LocalDateTime
-                    .now()
-                    .plusSeconds(offset);
+            int offset = a.wakeTurbulence().getTimeOffset();
+            depTime = depTime.plusSeconds(offset);
             System.out.println("Aircraft " + a.callSign() + " takes off at " + depTime);
         }
     }
